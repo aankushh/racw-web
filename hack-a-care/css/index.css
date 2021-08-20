@@ -501,10 +501,19 @@ button:focus {
   }
   .about-text > :nth-child(2) {
     width: 100%;
-    text-align: left !important;
+    text-align: center !important;
+    font-size: 15px !important;
+    max-lines: 3 !important;
+  }
+  .about-text > :nth-child(4) {
+    width: 100%;
+    text-align: center !important;
+    font-size: 15px !important;
+    max-lines: 3 !important;
+    line-height: 20px !important;
   }
   #register {
-    width: 50% !important;
+    width: 70% !important;
     height: 50%;
   }
   .uni {
@@ -524,7 +533,7 @@ button:focus {
   .contact-block {
     margin: 10px !important;
     width: 90% !important;
-    height: 10000px !important;
+    height: 400px !important;
   }
   #header {
     justify-content: center;
@@ -555,7 +564,11 @@ button:focus {
   #footer-nav {
     margin-top: 50px;
     width: 100% !important;
-    align-items: flex-start !important;
+    align-items: center !important;
+  }
+  #footer-nav a {
+    text-align: left !important;
+    margin: 5px;
   }
   #location {
     width: 100% !important;
@@ -658,15 +671,10 @@ ol > li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background: linear-gradient(
-    275deg,
-    rgba(255, 255, 255, 0.089),
-    rgba(255, 255, 255, 0.068)
-  );
+  background: rgb(27, 27, 27);
   /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -724,7 +732,7 @@ ol > li {
   transition: 0.6s ease-in-out;
 }
 .location-div {
-  padding: 40px 0;
+  padding: 30px 0;
   display: flex;
   flex-direction: row;
   width: 100%;
