@@ -114,7 +114,7 @@ html {
   padding: 2vh 0px !important;
 }
 #contact {
-  margin: 4vh 0px !important;
+  margin: 1vh 0px !important;
   padding: 2vh 0px !important;
   display: flex;
   justify-content: space-around;
@@ -777,4 +777,42 @@ marquee a {
   text-align: left !important;
   letter-spacing: 2px;
   font-size: 25px;
+}
+
+/* ---------- our sponsors ------------- */
+.sponsors{
+  padding: 30px 0;
+  background-color: #30084E ;
+}
+.sponsors-title{
+  z-index: 100!important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+.spon-box{
+  max-width: 1000px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spon-box-box{
+  width: 300px;
+  min-height: 200px;
+  border-radius: 12px;
+  /* box-shadow: 0px 8px 14px 5px rgba(91, 44, 111,0.8); */
+  border: 2px solid #A569BD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.spon-box-box:hover{
+  box-shadow: 0px 4px 8px 5px rgba(165, 105, 189,0.8);
+}
+.spon-img img{
+  height: 100px;
+  width: auto;
 }
