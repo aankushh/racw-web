@@ -30,6 +30,62 @@
    
   </head>
 
+  <style>
+  .hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.hero-section__heading {
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.hero-section_description {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 100px;
+
+}
+
+@media (max-width: 1200px) {
+  .hero-section {
+    height: unset;
+  }
+  .hero-section__image-wrapper {
+    display: none;
+  }
+  .hero-section__image--devices {
+    width: 100%;
+    display: block;
+    margin: 0px auto;
+  }
+}
+@media (max-width: 1024px) {
+  .hero-section__heading {
+    font-size: 3.5rem;
+  }
+  .hero-section_description {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section__heading {
+    font-size: 36px;
+  }
+  .hero-section_description {
+    font-size: 20px;
+  }
+}
+  </style>
+
   <!-- <body
     style="
       background: url(./resources/b.gif);
@@ -58,7 +114,7 @@
     <div id="logo"><img src="./resources/rotaract logo (FOR BLACK BG).png" alt="" width="180px" height="100px"></div>
 
     <!-- <center> -->
-      <div id="middle" >
+      <!-- <div id="middle" >
         <div
           class="intro animated zoomIn"
           style="
@@ -77,7 +133,25 @@
             data-type='[ "Ideate", "Innovate", "Invent"]'
           ></p>
         </div>
-      </div>
+      </div> -->
+   
+
+      <section class="hero-section">
+        <h1 class="hero-section__heading">Hack-A-Care</h1>
+        <div class="hero-section__description--wrapper">
+          <div class="hero-section_description typewrite"
+          data-period="2000"
+          data-type='[ "Ideate", "Innovate", "Invent"]'>
+            <!-- Build Your
+            <typer :words="['Creative', 'Responsive', 'Customised', 'Light', 'Professional']" /> -->
+          </div>
+        </div>
+        <div class="hero-section__image-wrapper">
+        </div>
+        <img src="./resources/1.svg" class="hero-section__image--devices" alt="FromStudio-Playground" />
+      </section>
+
+
     <!-- </center> -->
 
     <div id="portfolio" style="margin-top: 200px;">
