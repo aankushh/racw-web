@@ -114,6 +114,8 @@ html {
   padding: 2vh 0px !important;
 }
 #contact {
+  margin: 1vh 0px !important;
+  padding: 2vh 0px !important;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -355,8 +357,6 @@ button:focus {
 }
 .intro > :nth-child(3) {
   font-size: 50px;
-}
-.topnav i {
 }
 @media only screen and (max-width: 426px) {
   #header {
@@ -752,7 +752,7 @@ marquee a {
   justify-content: center;
 }
 .uni {
-  height: 500px;
+  min-height: 500px;
   justify-content: space-between !important;
 }
 .uni h1 {
@@ -767,4 +767,45 @@ marquee a {
 #logo {
   display: flex;
   justify-content: space-between;
+}
+
+/* ---------- our sponsors ------------- */
+.sponsors {
+  /* padding: 30px 0; */
+  background-color: #300843;
+}
+.sponsors-title {
+  z-index: 100 !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.spon-box {
+  max-width: 1000px;
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spon-box-box {
+  width: 300px;
+  min-height: 200px;
+  border-radius: 12px;
+  /* box-shadow: 0px 8px 14px 5px rgba(91, 44, 111,0.8); */
+  border: 2px solid #a569bd;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.spon-box-box:hover {
+  box-shadow: 0px 4px 8px 5px rgba(165, 105, 189, 0.8);
+}
+.spon-img img {
+  height: 100px;
+  width: auto;
 }
