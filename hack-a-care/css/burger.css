@@ -1,46 +1,60 @@
-/* Style the navigation menu */
+.mobile-container {
+  margin: auto;
+  /* background-color: #555; */
+  height: 100px;
+  max-height: fit-content;
+  color: #fff;
+  background-color: #000;
+  width: 100%;
+}
+
 .topnav {
   overflow: hidden;
-  background-color: #333;
-  position: relative;
-  display: flex;
-  flex-direction: row;
+  /* position: relative; */
+  z-index: 10;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
-  display: flex;
-  /* flex-direction: row;
-  justify-content: center;
-  align-items: center; */
+  text-align: center;
+  height: 100vh;
+  width: 250px;
+  z-index: 200;
+  background: #000;
+  position: fixed;
+  right: 0;
+  margin-top: -115px;
+  padding-top: 100px;
+  display: none;
+
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
 }
 
-/* Style navigation menu links */
 .topnav a {
-  color: white;
-  padding: 14px 16px;
+  color: #fff;
+  padding: 5px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
 }
 
-/* Style the hamburger menu */
 .topnav a.icon {
-  background: black;
-  display: block;
+  /* background-color: #30084e; */
+  /* display: block; */
+  display: flex;
   position: absolute;
+  z-index: 200;
   right: 0;
   top: 0;
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active link (or home/logo) */
 .active {
-  background-color: #04aa6d;
+  /* background-color: #04aa6d; */
   color: white;
+}
+@media (max-width: 768px) {
+  .topnav #myLinks {
+    width: 100%;
+  }
 }

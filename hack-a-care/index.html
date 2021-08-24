@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
     />
+    <link rel="stylesheet" href="./css/burger.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -94,7 +95,7 @@
       background-attachment: fixed;
       backdrop-filter: 0.1;"
   > -->
-  <body>
+  <body style="background: #300843;">
     <!-- <div id="particles-js"></div> -->
     <!-- <div
       id="header1"
@@ -111,7 +112,30 @@
         <a href="#contact">Contact</a>
       </div>
     </div> -->
-    <div id="logo"><img src="./resources/rotaract logo (FOR BLACK BG).png" alt="" width="180px" height="100px"></div>
+    <!-- <div id="logo">
+      <img src="./resources/rotaract logo (FOR BLACK BG).png" alt="" width="180px" height="100px">
+    
+    </div> -->
+
+    <!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active"><img src="./resources/rotaract logo (FOR BLACK BG).png" alt="" width="180px" height="100px"></a>
+  <div id="myLinks">
+     <a href="#about"> About</a>
+     <a href="#timer">Timer</a>
+    <a href="https://forms.gle/fE6LzxMeiRcxrfbB8" target="_blank"> Register</a>
+    <a href="#contact"> Contact</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" id="burger" onclick="bleh()">
+    <i class="fa fa-bars" style="padding-top: 20px;font-size: 28px; z-index: 200;"></i>
+  </a>
+</div>
+
+<!-- End smartphone / tablet look -->
+</div>
 
     <!-- <center> -->
       <!-- <div id="middle" >
@@ -165,9 +189,9 @@
             
         </div>
         <!-- <img src="./resources/a.svg" width="40%"  height="100% " alt=""> -->
-        <div class="about-text">
-          <h1 style="font-family: 'Montserrat', sans-serif;margin: 0;letter-spacing: 2px; font-size: 50px!important;">About</h1>
-          <p class="common-section" id="about-p">
+        <div class="about-text common-section">
+          <h1>About</h1>
+          <p id="about-p">
             “Any sufficiently advanced technology is indistinguishable from
             magic". Technology is the tool, the world needs, to be a better
             place. All that with a kind
@@ -179,43 +203,36 @@
           
         </div>
       </div>
-<div id="rules">
-  <h1 style="font-family: 'Montserrat', sans-serif; letter-spacing: 2px;margin:0 ; font-size: 50px!important;">Rules</h1>
+<div id="rules" class="common-section">
+  <h1>Rules</h1>
           <ul
             style="font-family: 'Montserrat', sans-serif;
             letter-spacing: 2px;
             font-size: 25px;
-            margin-left: 25px;
             font-weight: 300;
               display: flex;
               justify-content: space-around !important;
               flex-direction: column;
               /* align-items: center; */
-              text-align: left;
+              text-align: center;
+              padding: 0;
+              list-style: none;
             "
           >
-            <li>In Team of Minimum 2 and Maximum 4 members.</li>
+            <li>In Team of Minimum 2 and Maximum 4 members.</li> <br>
             <li>
               Early bird slab <br>
               ₹99 for first 25 teams.
-            </li>
-            <li>Last date of registration - 26th August 2021.</li>
+            </li> <br>
+            <li>Last date of registration - 26th August 2021.</li> <br>
             <!-- <li>Lorem, ipsum.</li>
             <li>Lorem, ipsum.</li> -->
           </ol>
 </div>
       <center>
         <div id="timerdiv"></div>
-        <div
-          id="middle"
-          class="uni"
-          style="
-            height: 500px;
-            justify-content: space-between !important;
-            margin-top: 100px;
-          "
-        >
-          <h1 style="font-size: 40px; z-index: 100 !important;letter-spacing: 2px; font-family: 'Montserrat', sans-serif;">
+        <div id="middle" class="uni common-section">
+          <h1 >
             Hack-a-Care starts in
           </h1>
           <div id="timer" class="animated zoomIn" style="animation-delay: 1s">
@@ -290,31 +307,11 @@
         </div>
       </div> -->
 
-      <div id="contact" style="margin-top: 100px!important; ">
+      <div id="contact" class="common-section">
         <h1 style="z-index: 100!important;font-family: 'Montserrat', sans-serif;font-size: 50px;letter-spacing: 2px;">Contact</h1>
         <br />
         <div id="contacts">
-          <!-- <form>
-          <input type="text" placeholder="name" required />
-          <input type="email" placeholder="email" required /><br />
-          <textarea placeholder="your message" required rows="5"></textarea
-          ><br />
-          <button class="btn_one">send</button>
-        </form> -->
-          <!-- <div id="details">
-          <a class="btn_social"><i class="fas fa-phone"></i></a>
-          <a class="btn_social"><i class="fas fa-at"></i></a>
-          <a class="btn_social"><i class="fab fa-twitter"></i></a>
-          <a class="btn_social"><i class="fab fa-dribbble"></i></a>
-        </div> -->
           <div class="contact-block">
-            <!-- <img
-              src="./resources/user.png"
-              width="50px"
-              height="50px"
-              style="filter: invert(1)"
-              alt=""
-            /> -->
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70" height="70" x="0" y="0" viewBox="0 0 537.6 537.6" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g>
               <g xmlns="http://www.w3.org/2000/svg">
                 <g>
@@ -359,13 +356,6 @@
             
           </div>
           <div class="contact-block" id="emailchair">
-            <!-- <img
-              src="./resources/user.png"
-              width="50px"
-              height="50px"
-              style="filter: invert(1)"
-              alt=""
-            /> -->
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="70" height="71" x="0" y="0" viewBox="0 0 487.678 487.678" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g>
               <g xmlns="http://www.w3.org/2000/svg">
                 <g>
@@ -408,24 +398,9 @@
             <a style="text-decoration: none; color: #fff;" href="https://www.linkedin.com/in/swastikjha/"><p style="font-size: 20px;">Event Chair</p></a>
             <a style="font-size: 15px; color: #fff; text-decoration: none;" href="mailto:swastikjha154@gmail.com">swastikjha154@gmail.com</a>
           </div>
-          <!-- <div class="contact-block" style="justify-content: space-around;">
-           <a href="https://www.instagram.com/racw3080/"> <img
-              src="./resources/instagram.png"
-              width="50px"
-              height="50px"
-              style="filter: invert(1)"
-              alt=""
-            /></a>
-            <h1 style="font-family: 'Nunito', sans-serif!important;">Instagram</h1>
-            <a style="text-decoration: none; color: white; font-size: 20px;" href="https://www.instagram.com/racw3080/">racw3080</a>
-          </div> -->
         </div>
       </div>
     </div>
-    <!-- <div id="footer">
-      made on earth by a human
-      <a href="https://imfunniee.github.io" style="z-index: 100">imfunny</a>
-    </div> -->
     <div class="footer">
       <div id="about-rota" >
         <!-- logo -->
@@ -442,20 +417,6 @@
           youth of our club with the vision of Embrace, Enhance, Empower have
           successfully led to progressive emergence of this place.
         </p>
-        <!-- <div id="socials" style=" height: fit-content">
-          <a target="_blank" href="https://www.facebook.com/RotaractClubOfWaknaghat/" style="width: fit-content; height: fit-content"
-            >
-              <i class="fa fa-facebook" style="font-size: 40px;color: white;"></i>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/company/rotaract-club-of-waknaghat/" style="width: fit-content; height: fit-content"
-            >
-              <i class="fa fa-linkedin" style="font-size: 45px;color: white;"></i>
-            </a>
-              <a target="_blank" href="https://www.instagram.com/racw3080/" style="width: fit-content; height: fit-content"
-            >
-            <i class="fa fa-instagram" style="font-size: 40px;color: white;"></i>
-          </a>
-        </div> -->
       </div>
       <div id="footer-nav">
         <h1 style="font-size: 30px!important;font-family: montserrat, sans-serif;" id="important-links">Important Links</h1>
@@ -510,9 +471,12 @@
       </div>
       
     </div>
-      <h3 style="background-color: #f2f2f2;">
+      <!-- <h3 style="background-color: #f2f2f2; width: 100%; height: 100%;">
         Copyright 2021 Rotaract Club Of Waknaghat all rights reserved
-      </h3>
+      </h3> -->
+      <div style="padding: 20px; background: rgb(27, 27, 27); width: 100%; text-align: center;">
+        &copy; 2021 Rotaract Club Of Waknaghat all rights reserved
+      </div>
     <script src="./js/index.js" type="text/javascript"></script>
     <script src="./js/countdown.js"></script>
     <script src="./js/typewriter.js"></script>
@@ -520,6 +484,7 @@
     <script src="./js/fade.js"></script>
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/burger.js"></script>
     
   </body>
 </html>

@@ -75,7 +75,6 @@ html {
   flex-direction: column;
   align-items: center;
   transition: 0.1s ease-in-out !important;
-  margin-bottom: 20px;
 }
 #tagline {
   font-size: 50px;
@@ -83,10 +82,11 @@ html {
 }
 #portfolio {
   width: 80%;
+  margin-top: 0px !important;
 }
 #portfolio div h1 {
   /* background-image: linear-gradient(to left, #ff416c 0%, #ff4b2b 100%); */
-  background: #c4b3e7;
+  background: #fff;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -114,52 +114,10 @@ html {
   padding: 2vh 0px !important;
 }
 #contact {
-  margin: 4vh 0px !important;
-  padding: 2vh 0px !important;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-}
-#contact form {
-  width: 100%;
-}
-#contact form input {
-  width: 46%;
-  margin: 20px 1%;
-  background: transparent;
-  border: 0px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  padding: 8px 10px;
-  font-family: "Comfortaa", cursive;
-  font-size: 18px;
-  transition: 0.4s ease-in-out;
-  color: #fff;
-}
-#contact form textarea {
-  width: 96%;
-  margin: 20px 1%;
-  padding: 8px 10px;
-  border: 0px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  padding: 8px 10px;
-  font-family: "Comfortaa", cursive;
-  font-size: 18px;
-  background: transparent;
-  resize: none;
-  transition: 0.4s ease-in-out;
-  color: #fff;
-}
-#contact form input:focus {
-  outline: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 1);
-}
-#contact form textarea:focus {
-  outline: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 1);
-}
-::placeholder {
-  color: #fff;
 }
 .btn_one {
   color: white;
@@ -398,7 +356,8 @@ button:focus {
 .intro > :nth-child(3) {
   font-size: 50px;
 }
-
+.topnav i {
+}
 @media only screen and (max-width: 426px) {
   #header {
     display: flex !important;
@@ -408,6 +367,16 @@ button:focus {
     height: fit-content !important;
     position: absolute !important;
   }
+  .topnav i {
+    margin-top: 35px !important;
+  }
+  .topnav img {
+    width: 130px !important;
+    height: 80px !important;
+  }
+  ul {
+    font-size: 15px !important;
+  }
   #links {
     padding-right: 0px !important;
   }
@@ -416,10 +385,6 @@ button:focus {
   }
   #about-div {
     display: none !important;
-  }
-
-  #header :nth-child(1) {
-    margin-top: 10px;
   }
   #emailchair a {
     font-size: 13.5px !important;
@@ -457,11 +422,9 @@ button:focus {
     display: none;
   }
   .about-text {
-    align-items: initial;
-    margin-left: 0px;
     align-items: flex-start;
     justify-content: left;
-    text-align: left !important;
+    text-align: center !important;
   }
   #about {
     justify-content: left;
@@ -487,7 +450,6 @@ button:focus {
     height: 300px !important;
   }
   #contact {
-    margin-top: 200px !important;
     height: fit-content;
     width: 100% !important;
   }
@@ -528,7 +490,6 @@ button:focus {
     text-align: left !important;
   }
   #footer-nav {
-    margin-top: 50px;
     width: 100% !important;
     align-items: center !important;
   }
@@ -547,9 +508,6 @@ button:focus {
     justify-content: left !important;
     padding: 20px !important;
     margin-top: 0 !important;
-  }
-  #middle {
-    padding-top: 200px !important;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -641,7 +599,7 @@ ol > li {
   /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
 }
 
 #myVideo {
@@ -768,13 +726,45 @@ marquee a {
   background-attachment: fixed;
   backdrop-filter: 0.1;
 }
-.common-section {
-}
 #about-p {
   font-weight: 300;
-  margin: 10px 0px !important;
   font-family: "Montserrat", sans-serif;
   text-align: left !important;
   letter-spacing: 2px;
+  text-align: center !important;
   font-size: 25px;
+}
+.about-text h1 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  font-size: 50px !important;
+}
+#rules h1 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  margin: 0;
+  font-size: 50px !important;
+}
+#rules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.uni {
+  height: 500px;
+  justify-content: space-between !important;
+}
+.uni h1 {
+  font-size: 40px;
+  z-index: 100 !important;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+.common-section {
+  padding: 30px 0;
+}
+#logo {
+  display: flex;
+  justify-content: space-between;
 }
