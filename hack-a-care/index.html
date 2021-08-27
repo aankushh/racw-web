@@ -100,6 +100,76 @@
          width: 100px;
          margin-right: 40px;
       }
+
+      .alliances {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 2rem .5rem;
+          justify-content: center;
+          max-width: 1000px;
+      }
+
+      .alliance-logo {
+    width: 4.3rem;
+    height: 5.3rem;
+    -o-object-fit: contain;
+    object-fit: contain;
+    display: block;
+    width: 150px;
+      }
+
+      .alliances .single-alliance {
+       border-bottom: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+    padding: 2rem;
+    background-color: #fff;
+    transition: box-shadow .2s linear;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 180px;
+}
+
+.alliances .single-alliance:hover {
+    border: 1px solid #fff;
+    box-shadow: 0 0 4rem 0.5rem rgb(0 0 0 / 8%);
+    border-radius: 2px;
+    z-index: 2;
+    margin: -1px 0 0 -1px;
+}
+
+@media (max-width: 650px) {
+/* .alliances .single-alliance:hover {
+    margin: .5rem;
+    border: none !important;
+    border-radius: .2rem;
+    box-shadow: 0 0 0.4rem 0.2rem rgb(0 0 0 / 10%);
+} */
+.alliances {
+    margin: 1rem -1rem;
+    padding: 0 1rem;
+    flex-direction: column;
+    max-height: 22rem;
+    overflow-x: auto;
+    width: 100vw;
+}
+.alliances .single-alliance {
+    margin: .5rem;
+    border: none !important;
+    border-radius: .2rem;
+    box-shadow: 0 0 0.4rem 0.2rem rgb(0 0 0 / 10%);
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.alliance-logo {
+    width: 90px;
+}
+}
    </style>
    <body>
      <div class="hero-nav__wrapper" style="background: #30084E; position: absolute; height: 100vh; width: 100vw;"></div>
@@ -121,7 +191,7 @@
             <a href="#about" >About Us</a>
             <a href="#about-event" >About Event</a>
             <a href="#rules-regulations" >Rules</a>            
-            <a href="#contact-us" >Contact</a>
+            <a href="#event-partners" >Partners</a>
             <a href="./teams.html" >Team</a>
             <a href="https://forms.gle/fE6LzxMeiRcxrfbB8" target="_blank">Register</a>
          </div>
@@ -181,7 +251,7 @@
                   <br>You’ll also be given points based on the real world problem you choose!
           </div>
 
-            <div class="sponsors-image__wrapper">
+            <!-- <div class="sponsors-image__wrapper">
                <a target="_blank" href="https://www.geeksforgeeks.org/" class="sponser-image">
                 <img src="./resources/sponsor-1.png">
                </a>
@@ -200,7 +270,7 @@
                <a target="_blank" href="https://codingblocks.com/" class="sponser-image">
                   <img src="./resources/sponsor-6.png">
                </a>
-            </div>
+            </div> -->
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" style="width: 100vw" viewBox="0 0 1440 320"><path fill="#30084E" fill-opacity="1" d="M0,224L48,234.7C96,245,192,267,288,261.3C384,256,480,224,576,208C672,192,768,192,864,170.7C960,149,1056,107,1152,101.3C1248,96,1344,128,1392,144L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
          </div>
@@ -260,10 +330,10 @@
       </div>
 
 
-      <h1 id="contact-us" class="heading__top" style="color: #30084E; font-weight: bold;">Contact Persons</h1>
+      <h1 id="event-partners" class="heading__top" style="color: #30084E; font-weight: bold;">Event Partners</h1>
       <div class="heading-line" style="margin-bottom: 100px;"></div>
 
-      <div class="contact-team">
+      <!-- <div class="contact-team">
          <div class="contact-box box-1">
             <div class="contact-image">
                <img src="./resources/contact-1.jpg">
@@ -293,9 +363,49 @@
                </div>
             </div>
          </div>
-      </div>
+      </div> -->
 
-     
+
+      
+      <div class="alliances">
+         <div class="single-alliance">
+         <center>  <a target="_blank" href="https://www.geeksforgeeks.org/">
+            <img src="./resources/sponsor-1.png" class="alliance-logo">
+           </a> </center>
+         </div>
+         <div class="single-alliance">
+         <center> <a target="_blank" href="https://www.givemycertificate.com/"> <img src="./resources/sponsor-2.png" class="alliance-logo"> </a> </center>
+         </div>
+         <div class="single-alliance">
+         <center> <a target="_blank" href="https://foxmula.com/"> <img src="./resources/sponsor-3.png" class="alliance-logo"> </a> </center>
+         </div>
+         <div class="single-alliance">
+         <center> <a target="_blank" href="https://minimaltweaks.com"> <img src="./resources/sponsor-4.jpeg" class="alliance-logo"> </a> </center>
+         </div>
+         <div class="single-alliance">
+         <center> <a target="_blank" href="https://kaploths.com/"> <img src="./resources/sponsor-5.png" class="alliance-logo"> </a> </center>
+         </div>
+         <div class="single-alliance">
+         <center> <a target="_blank" href="https://codingblocks.com/"> <img src="./resources/sponsor-6.png" class="alliance-logo"> </a> </center>
+         </div>
+         <div class="single-alliance">
+         <center> <a target="_blank" href="https://logyify.com/"> <img src="./resources/sponsor-7.png" class="alliance-logo"> </a> </center>
+         </div>
+         <div class="single-alliance">
+            <center> <a target="_blank" href="https://epiphanysnacks.com/"> <img src="./resources/sponsor-9.png" class="alliance-logo"> </a> </center>
+            </div>
+         <div class="single-alliance">
+         <center> <a target="_blank" href="https://codeforcause.org/"> <img src="./resources/sponsor-8.png" class="alliance-logo"> </a> </center>
+         </div>
+        
+         </div>
+
+
+
+
+
+
+
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#300843" fill-opacity="1" d="M0,192L48,170.7C96,149,192,107,288,90.7C384,75,480,85,576,122.7C672,160,768,224,864,229.3C960,235,1056,181,1152,165.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
       <div class="footer">
