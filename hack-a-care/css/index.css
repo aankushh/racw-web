@@ -352,7 +352,7 @@ button:focus {
 .intro > :nth-child(3) {
   font-size: 50px;
 }
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 768px) {
   #header {
     display: flex !important;
     padding-left: 0;
@@ -481,7 +481,8 @@ button:focus {
   }
   #about-rota p {
     width: 100% !important;
-    text-align: left !important;
+    text-align: left;
+    padding: 20px;
   }
   #footer-nav {
     width: 100% !important;
@@ -495,13 +496,16 @@ button:focus {
     width: 100% !important;
     height: 1200% !important;
     align-items: left !important;
-    justify-content: left !important;
+    justify-content: left;
     font-size: 13px !important;
   }
   .location-div {
-    justify-content: left !important;
+    justify-content: left;
     padding: 20px !important;
     margin-top: 0 !important;
+  }
+  .location-div{
+    text-align: center !important;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -645,7 +649,7 @@ ol > li {
   transition: 0.6s ease-in-out;
 }
 .location-div {
-  padding: 30px 0;
+  padding: 12px 0;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -969,7 +973,7 @@ li {
 }
 
 .common-section--text{
-  padding: 100px 0px;
+  padding: 50px 0px;
 }
 
 .heading__top{
@@ -992,6 +996,7 @@ li {
   border-radius: 8px;
   background: rgb(248,30,150);
   background: linear-gradient(90deg, rgba(248,30,150,1) 0%, rgba(251,140,112,1) 54%, rgba(251,140,112,1) 100%);
+  margin: 10px auto 50px auto;
 }
 
 .description-text{
@@ -1001,13 +1006,17 @@ li {
 
 @media (max-width: 768px) {
   .common-section--text{
-    padding: 0px;
+    padding: 20px 0px;
   }
   .heading-line{
     font-size: 20px;
+    margin-bottom: 20px;
   }
   .description-text{
     font-size: 18px;
+  }
+  .heading-line--dark{
+    margin: 10px auto 20px auto;
   }
 }
 

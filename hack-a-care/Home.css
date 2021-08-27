@@ -439,22 +439,22 @@
 
   .u-section-1 .u-text-1 {
     font-size: 2.25rem;
-    margin-right: calc(((100% - 340px) / 2));
-    margin-left: calc(((100% - 340px) / 2));
+    margin-right: calc(((100% - 300px) / 2));
+    margin-left: calc(((100% - 300px) / 2));
   }
 
   .u-section-1 .u-line-1 {
-    margin-left: calc(((100% - 340px) / 2));
+    margin-left: calc(((100% - 300px) / 2));
   }
 
   .u-section-1 .u-text-2 {
-    margin-right: calc(((100% - 340px) / 2));
-    margin-left: calc(((100% - 340px) / 2));
+    margin-right: calc(((100% - 300px) / 2));
+    margin-left: calc(((100% - 300px) / 2));
   }
 
   .u-section-1 .u-text-3 {
-    margin-right: calc(((100% - 340px) / 2) + 176px);
-    margin-left: calc(((100% - 340px) / 2));
+    margin-right: calc(((100% - 300px) / 2) + 176px);
+    margin-left: calc(((100% - 300px) / 2));
   }
 
   .u-section-1 .u-shape-1 {
