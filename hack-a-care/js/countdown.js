@@ -1,4 +1,4 @@
-var deadline = new Date(`aug 28, 2021 12:00:00`).getTime();
+var deadline = new Date(`aug 29, 2021 11:30:00`).getTime();
 
 var x = setInterval(function () {
   var currentTime = new Date().getTime();
@@ -17,11 +17,3 @@ function set(days, hours, minutes, seconds) {
   document.querySelector(`#minutes`).textContent = minutes;
   document.querySelector(`#seconds`).textContent = seconds;
 }
-/*
-1) rota presents 
-2) about event
-3) timer
-4) register button
-5) contact
-6) footer
-*/
